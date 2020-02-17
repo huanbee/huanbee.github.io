@@ -1,0 +1,42 @@
+[33mcommit ff43ed1bb89ed410852488c5a5c16b1517ebdb1f[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: huanbee <huanbee97@gmail.com>
+Date:   Sat Feb 15 19:53:40 2020 +0700
+
+    test b2
+
+[33mcommit 0507d3840ea64e3b628e328f0ec57e4b532ffb57[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: huanbee <huanbee97@gmail.com>
+Date:   Fri Feb 14 21:11:22 2020 +0700
+
+    update lai
+
+[33mcommit ff199638db060f3c6db6e1e9cde886ea99c7830e[m
+Merge: cd72f80 1dbb989
+Author: huanbee <huanbee97@gmail.com>
+Date:   Fri Feb 14 21:06:44 2020 +0700
+
+    on fix
+
+[33mcommit 1dbb989090365998f5ad972e172fa0c7b16fdd81[m
+Author: Nguyen Huan <43702246+huanbee@users.noreply.github.com>
+Date:   Fri Feb 14 20:59:06 2020 +0700
+
+    Delete index.html
+
+[33mcommit cd72f80f1af94f220a3a3afcb4f3f284b87fcc5f[m
+Author: huanbee <huanbee97@gmail.com>
+Date:   Fri Feb 14 20:57:31 2020 +0700
+
+    Them Trai tim
+
+[33mcommit 3dc19ec8bcaebbecc290bf1a1d819e05f9af807c[m
+Author: Nguyen Huan <43702246+huanbee@users.noreply.github.com>
+Date:   Fri Feb 14 20:55:38 2020 +0700
+
+    Update index.html
+
+[33mcommit dab681429146ece7d933007d934bb0994a42775a[m
+Author: huanbee <huanbee97@gmail.com>
+Date:   Fri Feb 14 19:59:31 2020 +0700
+
+    First commit
