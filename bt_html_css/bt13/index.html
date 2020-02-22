@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo form và các điều khiển</title>
+</head>
+
+<body>
+
+    <form>
+        <h2 style="color: green;text-align: center;">Đăng ký du lịch</h2>
+        <table border="1" align="center" style="border-collapse: collapse; background-color:rgb(229, 236, 160); color:royalblue;">
+            <tr>
+                <td>Họ và tên</td>
+                <td><input type="text"> </td>
+            </tr>
+            <tr>
+                <td>Địa chỉ</td>
+                <td><input type="text"> </td>
+            </tr>
+            <tr>
+                <td>Điện thoại</td>
+                <td><input type="text"> </td>
+            </tr>
+            <tr>
+                <td>Khách hàng Việt Nam</td>
+                <td>
+                    <input type="checkbox" name="gt" value="Nam">
+
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>Chọn tour</td>
+                <td>
+                    <select id="sp ">
+                        <optgroup label="Miền bắc ">
+                        <option   value="kdr ">Hà Nội - Hạ Long -SaPa</option>
+                        <option   value="bgbg ">Hà Nội - Chùa Hương - ninh Bình</option>
+                        <option   value="dgddgd ">Hà Nội - Cát Bà - Tuần Châu</option>
+                        </optgroup>
+                        <optgroup label="Miền Trung ">
+                            <option   value="kdr ">Huế - Bạch Mã - Đà Nẵng</option>
+                            <option   value="bgbg ">Nha Trang - Đà Lạt</option>
+                            <option   value="dgddgd ">Buôn Mê Thuật - Gia Lai - Kontum</option>
+                            </optgroup>
+                            <optgroup label="Miền bắc ">
+                                <option   value="kdr ">TP.HCM - Cần Thơ - Cà mau</option>
+                                <option   value="bgbg ">TP.HCM - Mỹ Tho</option>                           
+                                </optgroup>
+
+
+
+                      </select>
+                </td>
+            </tr>
+            <td>Phương tiện</td>
+            <td>
+                <input type="radio" name="gt" value="mb">
+                <label for="Nam">Máy Bay</label>
+                <input type="radio" name="gt" value="oto">
+                <label for="Nu">Xe Ô tô</label>
+
+            </td>
+            <tr>
+                <td colspan="2">
+                    <fieldset>
+                        <legend><i>Số lượng đoàn khách</i></legend>
+                        Người lớn
+                        <input type="text" /> Trẻ em
+                        <input type="text" />
+
+                    </fieldset>
+                </td>
+
+            </tr>
+            <tr>
+                <td colspan="2 " style="text-align: center; ">
+                    Ghi chú thêm
+                    <input type="text" style="height: 50px; width: 350px;" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2 " style="text-align: center;">
+                    <input type="button" id=" bt " value="Đồng ý " onclick="myFunction() ">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2 ">
+                    <div id="hien " style="text-align: center; color: red; "></div>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+        function myFunction() {
+            document.getElementById("hien ").innerText = "Bạn đã đăng ký thành công!!! "
+        }
+    </script>
+
+</body>
+
+</html>
