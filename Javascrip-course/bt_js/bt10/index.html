@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="con"></p>
+    <a id="more_less" href="#" onclick="myFunction1()" style="">Read More</a>
+
+    <script>
+        var txt = "Liên quan đến sự việc một học sinh lớp 1 phải đứng ở cổng trường giữa trưa nắng vì đi học sớm 15 phút, chị M., mẹ của học M.T.T.T cho biết, khi thấy cô giáo chụp ảnh con chị phê bình vì đi sớm, chị có nói hoàn cảnh gia đình với cô giáo vì sao không thể đưa con đi học đúng giờ bởi còn công việc buổi chiều nhưng cô giáo nói gia đình phải tự sắp xếp."
+        var more_less = document.getElementById("more_less")
+        var txtContent = document.getElementById("con")
+
+        function myFunction() {
+            if (txt.length < 50) {
+                txtContent.innerText = txt
+            } else {
+                txtContent.innerText = txt.slice(0, 50) + "..."
+            }
+        }
+
+        function myFunction1() {
+            if (more_less.innerHTML == "Read More") {
+                txtContent.innerText = txt
+                more_less.innerText = "Read Less"
+            } else {
+                txtContent.innerText = txt.slice(0, 50) + "..."
+                more_less.innerText = "Read More"
+            }
+        }
+        myFunction()
+    </script>
+
+</body>
+
+</html>

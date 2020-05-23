@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .button {
+            width: 50px;
+            height: 50px;
+        }
+        
+        #index {
+            margin: 5;
+            padding: 5;
+            font-size: 25px;
+            width: 205px;
+        }
+    </style>
+</head>
+
+<body>
+    <input id="index" type="text">
+    <table>
+        <tr>
+            <td colspan="2"><input class="button" type="button" value="C" onclick="index_clear()" style="width: 102px;"></td>
+            <td><input class="button" type="button" value="<" onclick="del()"></td>
+            <td><input class="button" type="button" value="/" onclick="sendPara('/')"></td>
+        </tr>
+        <tr>
+            <td><input class="button" type="button" value="7" onclick="sendPara(7)"></td>
+            <td><input class="button" type="button" value="8" onclick="sendPara(8)"></td>
+            <td><input class="button" type="button" value="9" onclick="sendPara(9)"></td>
+            <td><input class="button" type="button" value="*" onclick="sendPara('*')"></td>
+        </tr>
+        <tr>
+            <td><input class="button" type="button" value="4" onclick="sendPara(4)"></td>
+            <td><input class="button" type="button" value="5" onclick="sendPara(5)"></td>
+            <td><input class="button" type="button" value="6" onclick="sendPara(6)"></td>
+            <td><input class="button" type="button" value="-" onclick="sendPara('-')"></td>
+        </tr>
+        <tr>
+            <td><input class="button" type="button" value="1" onclick="sendPara(1)"></td>
+            <td><input class="button" type="button" value="2" onclick="sendPara(2)"></td>
+            <td><input class="button" type="button" value="3" onclick="sendPara(3)"></td>
+            <td><input class="button" type="button" value="+" onclick="sendPara('+')"></td>
+        </tr>
+        <tr>
+            <td><input class="button" type="button" value="0" onclick="sendPara(0)"></td>
+            <td><input class="button" type="button" value="." onclick="sendPara('.')"></td>
+            <td colspan="2"><input class="button" type="button" value="=" style="width: 102px;" onclick="equal()"></td>
+
+        </tr>
+    </table>
+
+
+
+    <script>
+        setInterval(() => {
+            document.getElementById("index").value.replace('.', '.')
+            if (document.getElementById("index").value[0] == 0 && document.getElementById("index").value[1] == 0) {
+                index_clear()
+            }
+
+        }, 100);
+
+        function sendPara(n) {
+            let e = document.getElementById("index");
+            if (e.value[0] == 0 && e.value[1] == 0) {
+                index_clear()
+            }
+            if (n == '/' || n == '*' || n == '-' || n == '+')
+                if (e.value.lastIndexOf('/') != -1 || e.value.lastIndexOf('*') != -1 || e.value.lastIndexOf('-') != -1 || e.value.lastIndexOf('+') != -1) {
+                    del()
+                    e.value = document.getElementById("index").value + n
+                } else {
+
+                    e.value = document.getElementById("index").value + n
+                }
+            else {
+                e.value = document.getElementById("index").value + n
+            }
+
+
+        }
+
+        function equal() {
+            let e = document.getElementById("index").value;
+            if (e)
+                document.getElementById("index").value = eval(e);
+            else {
+
+            }
+        }
+
+        function index_clear() {
+            document.getElementById("index").value = "";
+        }
+
+        function del() {
+            let e = document.getElementById("index").value;
+            document.getElementById("index").value = e.substring(0, e.length - 1);
+
+        }
+    </script>
+</body>
+
+</html>

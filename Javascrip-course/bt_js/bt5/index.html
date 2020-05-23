@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function myFunction() {
+            let yearNow = new Date()
+            yearNow = yearNow.getFullYear()
+            do {
+                year = prompt("Ban hay nhap vao nam sinh: ", "")
+                if (year < yearNow)
+                    document.write("<p>Tuoi cua ban la: <b>" + (yearNow - year) + "</b></p>")
+
+            } while (yearNow - year < 0);
+        }
+        myFunction();
+    </script>
+</body>
+
+</html>

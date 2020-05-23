@@ -1,0 +1,140 @@
+p[id] {
+    border: 2px solid black;
+}
+
+
+/* #phancap {
+    display: flex;
+    margin-right: 15px;
+} */
+
+.block {
+    width: 300px;
+    height: 300px;
+}
+
+#p0 {
+    margin-top: 50px;
+}
+
+.sm-block {
+    width: 150px;
+    height: 150px;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-blue {
+    background-color: blue;
+}
+
+.block p {
+    border: 1px solid black;
+}
+
+.block>p {
+    border: 1px solid black;
+}
+
+.bg-red~.block {
+    background-color: darkgreen;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+td:first-child {
+    text-align: center;
+    background-color: darkgreen;
+    width: 15%;
+}
+
+td:last-child {
+    text-align: center;
+    background-color: darkgoldenrod;
+}
+
+tr:first-child {
+    background-color: burlywood;
+    text-align: center;
+}
+
+.my-input:focus {
+    width: 100%;
+    transition: all 4s ease-in;
+}
+
+.my-input:hover {
+    content: "sdsdsds";
+    transition: all 1s ease-in;
+}
+
+p.first-letter::first-letter {
+    color: red;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+p.first-letter::first-line {
+    color: blue;
+}
+
+#tren {
+    width: 100%;
+    height: 50px;
+    background-color: chartreuse;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.my-transition {
+    position: relative;
+    transition: all 4s ease-in;
+}
+
+.my-transition:hover {
+    width: 600px;
+}
+
+.my-input1 {
+    width: 100px;
+    transition: width 1s;
+}
+
+.my-input1:focus {
+    width: 200px;
+}
+
+.my-input1:hover {
+    width: 200px;
+}
+
+.my-animation {
+    position: relative;
+    transition: all 5s;
+    animation: slide 1s alternate 1s infinite;
+}
+
+.my-animation:hover {
+    transform: rotate(360deg);
+    border-radius: 50%;
+}
+
+@keyframes slide {
+    0% {
+        left: 0px;
+    }
+    50% {
+        left: 100px;
+    }
+    100% {
+        left: 0px;
+    }
+}

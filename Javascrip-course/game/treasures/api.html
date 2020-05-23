@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>The XMLHttpRequest Object</h1>
+
+    <button type="button" onclick="loadDoc()">Request data</button>
+    <button type="button" onclick="loadDoc2()">Request data</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function loadDoc() {
+            var data = null;
+
+            var xhr = new XMLHttpRequest();
+            xhr.withCredentials = true;
+
+            xhr.addEventListener("readystatechange", function() {
+                if (this.readyState === this.DONE) {
+                    console.log(this.responseText);
+                }
+            });
+
+            xhr.open("GET", "https://privatix-temp-mail-v1.p.rapidapi.com/request/mail/id/%7Bmd5%7D/");
+            xhr.setRequestHeader("x-rapidapi-host", "privatix-temp-mail-v1.p.rapidapi.com");
+            xhr.setRequestHeader("x-rapidapi-key", "0dc84b6eb7msh6117d9ab4fe9385p159401jsn46cc28d160e3");
+
+            xhr.send(data);
+
+
+            // xhttp.open("POST", "https://api.internal.temp-mail.io/api/v2/email/new", true);
+            // xhttp.setRequestHeader('{ "min_name_length", "10"}');
+            // xhttp.setRequestHeader("max_name_length", "10");
+        }
+
+
+        function loadDoc2() {
+            var data = null;
+
+            var xhr = new XMLHttpRequest();
+            xhr.withCredentials = true;
+
+            xhr.addEventListener("readystatechange", function() {
+                if (this.readyState === this.DONE) {
+                    console.log(this.responseText);
+                }
+            });
+
+            xhr.open("GET", "https://privatix-temp-mail-v1.p.rapidapi.com/request/domains/");
+            xhr.setRequestHeader("x-rapidapi-host", "privatix-temp-mail-v1.p.rapidapi.com");
+            xhr.setRequestHeader("x-rapidapi-key", "0dc84b6eb7msh6117d9ab4fe9385p159401jsn46cc28d160e3");
+
+            xhr.send(data);
+        }
+    </script>
+
+</body>
+
+</html>

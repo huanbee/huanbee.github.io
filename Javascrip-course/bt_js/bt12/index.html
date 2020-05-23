@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        function myFunction1() {
+            let p1 = document.createElement("p");
+            p1.innerText = "So luong:"
+            document.body.appendChild(p1)
+            let txt1 = document.createElement("input")
+            txt1.setAttribute("name", "SoLuong")
+            txt1.setAttribute("type", "number")
+                // txt1.setAttribute("onclick", "myFunction2()")
+            document.body.appendChild(txt1)
+
+            let p2 = document.createElement("p");
+            p2.innerText = "Don gia:"
+            document.body.appendChild(p2)
+            let txt2 = document.createElement("input")
+            txt2.setAttribute("name", "DonGia")
+            txt2.setAttribute("type", "number")
+                // txt2.setAttribute("onclick", "myFunction2()")
+            document.body.appendChild(txt2)
+
+            let p3 = document.createElement("p");
+            p3.innerText = "Thanh tien:"
+            document.body.appendChild(p3)
+            let txt3 = document.createElement("input")
+            txt3.setAttribute("name", "ThanhTien")
+            document.body.appendChild(txt3)
+        }
+        myFunction1()
+        setInterval(myFunction2, 1000)
+
+        function myFunction2() {
+            let sl = document.getElementsByName("SoLuong")[0].value
+            let dg = document.getElementsByName("DonGia")[0].value
+            let tt = document.getElementsByName("ThanhTien")[0]
+            if (sl != "" && dg != "") {
+                tt.value = sl * dg
+
+            } else
+                tt.value = 0
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <select id="mylist" onchange="myFunction1()">
+        <option value="1">blue</option>
+        <option value="2">red</option>
+        <option value="3">brown</option>
+        <option value="4">lavender</option>
+    </select>
+    </br>
+
+    <script>
+        function myFunction1() {
+            var mylist = document.getElementById('mylist');
+            document.getElementsByTagName("body")[0].style.backgroundColor = mylist.options[mylist.selectedIndex].text;
+        }
+    </script>
+</body>
+
+</html>

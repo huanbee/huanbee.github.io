@@ -1,0 +1,44 @@
+/*  */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: forestgreen;
+}
+
+nav {
+    background-color: hotpink;
+}
+
+section {
+    background-color: rgb(108, 1, 230);
+}
+
+aside {
+    background-color: navy;
+}
+
+article {
+    background-color: lightseagreen;
+}
+
+footer {
+    background-color: rgb(175, 0, 0);
+    clear: both;
+}
+
+
+/* Layout */
+
+aside {
+    float: left;
+    width: 25%;
+}
+
+article {
+    float: right;
+    width: 75%;
+}

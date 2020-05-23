@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+    </nav>
+
+
+
+    <div style="">
+        <fieldset style=" display: inline-block; margin: auto;">
+            <legend>Login</legend>
+
+            <table>
+                <tr>
+                    <td><label for="user">Username: </label></td>
+                    <td> <input type="text" name="user" id="user" placeholder="Nhập tên tài khoản"></td>
+                </tr>
+                <tr>
+                    <td> <label for="pass">Password: </label></td>
+                    <td><input type="password" name="user" id=pass placeholder="Nhập mật khẩu ">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Đăng nhập" onclick="dangnhap()">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p id="tt" style="display: none;">đăng nhập thành công</p>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </div>
+
+
+
+
+    <script>
+        function dangnhap() {
+            alert("đăng nhập thành công");
+            document.getElementById("tt").style.display = "block";
+        }
+    </script>
+
+</body>
+
+</html>

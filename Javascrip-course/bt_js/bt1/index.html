@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="myFunction1()">Bai 1</button>
+    </br>
+
+    <script>
+        function myFunction1() {
+            let name = prompt("Ban hay nhap vao ten: ", "")
+            let old = prompt("Ban hay nhap vao tuoi: ", "")
+            if (name && old != null) {
+                document.write("<p>Chao ban: <b>" + name + "</b></p>")
+                document.write("<p>Tuoi cua ban la: <u>" + old + "</u></p>")
+            } else {
+                alert("Ban chua nhap 'Ten' hoac 'Tuoi'. Vui long nhap lai!")
+                myFunction1()
+            }
+        }
+    </script>
+</body>
+
+</html>

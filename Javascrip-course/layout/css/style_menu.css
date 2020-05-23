@@ -1,0 +1,54 @@
+/*  */
+
+body,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    background-color: dimgray;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.menu .item {
+    display: inline;
+    position: relative;
+}
+
+.menu .item a {
+    display: inline-block;
+    text-transform: uppercase;
+    color: snow;
+    /* bo gạch chân trong thẻ a: text-decoration: none;*/
+    text-decoration: none;
+    padding: 10px;
+}
+
+.menu .item a:hover {
+    color: red;
+    background-color: black;
+}
+
+.sub-menu {
+    position: absolute;
+    background-color: dimgray;
+    left: 0px;
+    display: none;
+}
+
+.sub-menu .sub-item {
+    list-style-type: none;
+    text-align: left;
+    width: 100%;
+}
+
+.sub-menu .sub-item a {
+    width: 180px;
+}
+
+.menu .item:hover .sub-menu {
+    display: block;
+}

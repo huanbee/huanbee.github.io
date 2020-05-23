@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Nhap vao nam sinh:</p>
+    <input type="number" id="year">
+    <button onclick="myFunction()">Tuoi cua ban la</button>
+    <p id="r"></p>
+
+    <script>
+        function myFunction() {
+            let year = document.getElementById("year").value
+            let yearNow = new Date()
+            yearNow = yearNow.getFullYear()
+            console.log(year)
+            console.log(yearNow)
+            let old = yearNow - year
+            document.getElementById("r").innerHTML = old
+            console.log(old)
+        }
+    </script>
+</body>
+
+</html>

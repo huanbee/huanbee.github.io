@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        function myFunction() {
+            var btn = document.createElement("BUTTON");
+            btn.innerHTML = "Welcome";
+            btn.setAttribute("name", "welcome")
+            btn.setAttribute("onClick", "btn_onClick()")
+            document.body.appendChild(btn);
+
+            var txt = document.createElement("input")
+            txt.value = "Welcome to"
+            txt.setAttribute("name", "msg")
+            document.body.appendChild(txt)
+
+        }
+
+        function btn_onClick() {
+            alert(document.getElementsByName("msg")[0].value)
+        }
+        myFunction()
+    </script>
+</body>
+
+</html>

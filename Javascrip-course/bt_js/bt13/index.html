@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        function myfunction1() {
+            // var txtss = document.createElement("p")
+            // txtss.innerHTML = "00";
+            // txtss.setAttribute("id", "ss")
+            //     // document.body.appendChild(txtss);
+
+            // var txts = document.createElement("p")
+            // txts.innerHTML = "00";
+            // txts.setAttribute("id", "s")
+            //     // document.body.appendChild(txts);
+
+            // var txtp = document.createElement("p")
+            // txtp.innerHTML = "00";
+            // txtp.setAttribute("id", "p")
+            //     // document.body.appendChild(txtp);
+
+            var txth = document.createElement("p")
+            txth.innerHTML = "00:00:00:00";
+            txth.setAttribute("id", "h")
+            document.body.appendChild(txth);
+
+            var btnBegin = document.createElement("BUTTON");
+            btnBegin.innerHTML = "Bat dau";
+            btnBegin.setAttribute("id", "begin")
+            btnBegin.setAttribute("onclick", "myfunction2()")
+            document.body.appendChild(btnBegin);
+
+            var btnReset = document.createElement("BUTTON");
+            btnReset.innerHTML = "Dat lai";
+            btnReset.setAttribute("id", "reset")
+            btnReset.setAttribute("onclick", "myfunction3()")
+            document.body.appendChild(btnReset);
+
+        }
+        myfunction1()
+        var loop
+
+        function myfunction3() {
+            clearInterval(loop)
+            let dem = document.getElementById("h")
+            dem.innerText = "00:00:00:00";
+            let bd = document.getElementById("begin")
+            bd.innerHTML = "Bat dau"
+        }
+
+
+
+        function myfunction2() {
+            let bd = document.getElementById("begin")
+            if (bd.innerHTML == "Bat dau") {
+                loop = setInterval(starttimer, 100)
+                bd.innerHTML = "tam dung"
+            } else {
+                clearInterval(loop)
+                bd.innerHTML = "Bat dau"
+            }
+        }
+        var counth = 0
+        var countp = 0
+        var counts = 0
+        var countss = 0
+
+
+        function starttimer() {
+            countss += 1
+            if (countss == 10) {
+                counts += 1;
+                countss = 0;
+            }
+            if (counts == 60) {
+                countp += 1;
+                counts = 0;
+            }
+            if (countp == 60) {
+                counth += 1;
+                countp = 0;
+            }
+            let dem = document.getElementById("h")
+            dem.innerText = counth + ":" + countp + ":" + counts + ":" + countss
+        }
+    </script>
+</body>
+
+</html>
