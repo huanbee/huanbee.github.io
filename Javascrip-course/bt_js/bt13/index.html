@@ -13,21 +13,6 @@
 
     <script>
         function myfunction1() {
-            // var txtss = document.createElement("p")
-            // txtss.innerHTML = "00";
-            // txtss.setAttribute("id", "ss")
-            //     // document.body.appendChild(txtss);
-
-            // var txts = document.createElement("p")
-            // txts.innerHTML = "00";
-            // txts.setAttribute("id", "s")
-            //     // document.body.appendChild(txts);
-
-            // var txtp = document.createElement("p")
-            // txtp.innerHTML = "00";
-            // txtp.setAttribute("id", "p")
-            //     // document.body.appendChild(txtp);
-
             var txth = document.createElement("p")
             txth.innerHTML = "00:00:00:00";
             txth.setAttribute("id", "h")
@@ -42,19 +27,23 @@
             var btnReset = document.createElement("BUTTON");
             btnReset.innerHTML = "Dat lai";
             btnReset.setAttribute("id", "reset")
-            btnReset.setAttribute("onclick", "myfunction3()")
+            btnReset.setAttribute("onclick", "resetTime()")
             document.body.appendChild(btnReset);
 
         }
         myfunction1()
         var loop
 
-        function myfunction3() {
+        function resetTime() {
             clearInterval(loop)
             let dem = document.getElementById("h")
             dem.innerText = "00:00:00:00";
             let bd = document.getElementById("begin")
             bd.innerHTML = "Bat dau"
+            counth = 0
+            countp = 0
+            counts = 0
+            countss = 0
         }
 
 
