@@ -1,6 +1,6 @@
 import { createStore, applyMiddleware } from "redux";
-import { loginReducer } from "../reducers/loginReducer";
+import reducerAll from "../reducers";
 import thunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
 
-export default createStore(loginReducer, composeWithDevTools(applyMiddleware(thunk)));
+export default createStore(reducerAll, composeWithDevTools(applyMiddleware(thunk)));

@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-class HomePage extends Component {
+class ContentLayout extends Component {
     render() {
         return (
             <div>
-                HomePage
+                
             </div>
         );
     }
 }
 
-export default HomePage;
+export default ContentLayout;

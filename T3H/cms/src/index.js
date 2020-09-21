@@ -4,22 +4,24 @@ import "./index.css";
 import "antd/dist/antd.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import store from "./store/store";
 import { Provider } from "react-redux";
+import store from './store/store'
 import { LOGIN } from "./constants/ActionType";
 
-let token= localStorage.getItem("token")
-if(token){
-  store.dispatch({type: LOGIN})
+let token = localStorage.getItem("token")
+if (token) {
+    store.dispatch({ type: LOGIN })
 }
 
+console.log("STARTING PROJECT")
+
 ReactDOM.render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <App />
-    </Provider>
-  </React.StrictMode>,
-  document.getElementById("root")
+    <React.StrictMode>
+        <Provider store={store}>
+            <App />
+        </Provider>
+    </React.StrictMode>,
+    document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change

@@ -4,6 +4,7 @@ import { Form, Input, Button, Checkbox, Card, Spin, Alert } from "antd";
 import { connect } from "react-redux";
 import { login } from "../../actions/LoginAction";
 import { Redirect } from "react-router-dom";
+import { withRouter } from "react-router";
 
 const layout = {
     labelCol: {
@@ -46,7 +47,10 @@ class LoginPage extends Component {
                     console.log("Login successful!");
                     // redirect to homepage
                     setTimeout(() => {
-                        window.location.href = "/";
+                        // window.location.href = "/";
+                        // router.push("/")
+                        console.log("history: ", this.props.history)
+                        this.props.history.push("/");
                     }, 1000);
                     this.setState({ message: { success: "Successful!" } });
                 }
@@ -72,7 +76,7 @@ class LoginPage extends Component {
     render() {
         const { data, message, loading } = this.state;
         const { isLoggedIn } = this.props;
-        console.log(data);
+        // console.log(data);
         return (
             <>
                 {isLoggedIn && <Redirect to="/" />}
@@ -164,4 +168,4 @@ function mapDispatchToProps() {
     };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps())(LoginPage);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps())(LoginPage));

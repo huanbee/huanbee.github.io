@@ -22,6 +22,7 @@ function onAddUser (user) {
 
 function onLoadUsers () {
     return new Promise(resolve => {
+        console.log("Users: ", Storage.users)
         setTimeout(() => { resolve({ data: { users: Storage.users } })}, 1000)
     })
 }

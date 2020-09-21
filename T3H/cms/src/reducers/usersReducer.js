@@ -1,20 +1,18 @@
 import { VIEW_USERS } from "../constants/ActionType";
 
-const initialStateLogin = {
-  login: {
-    isLoggedIn: false,
-  },
-  user:[]
+const initialStateUsers = {
+    list: []
 };
-const userReducer = (state = initialStateLogin, action) => {
-  switch (action.type) {
-    case VIEW_USERS:
-      return {
-        user: action.user
-      };
-    default:
-      return state;
-  }
+
+const userReducer = (state = initialStateUsers, action) => {
+    switch (action.type) {
+        case VIEW_USERS:
+            return {
+                list: action.users
+            };
+        default:
+            return state;
+    }
 };
 
 export { userReducer };

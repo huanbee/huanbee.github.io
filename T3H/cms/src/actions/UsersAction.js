@@ -15,6 +15,6 @@ const loadedUsers = (users) => ({
 });
 
 const loadUsers = () => (dispatch) =>
-    onLoadUsers().then((res) => dispatch(loadedUsers(res.data)));
+    onLoadUsers().then((res) => dispatch(loadedUsers(res.data.users)));
 
 export { addUser, loadUsers };

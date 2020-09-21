@@ -2,6 +2,12 @@ import React, { Component } from "react";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faAt,
+  faPhoneAlt,
+  faMapMarkerAlt,
+} from "@fortawesome/free-solid-svg-icons";
 
 class FooterLayout extends Component {
   render() {
@@ -12,27 +18,15 @@ class FooterLayout extends Component {
             <Col sm xs={12}>
               <div id="contact">
                 <h4>Contact</h4> <hr />
-                <a href="mailto:example@mail.com">
-                  <img
-                    src="images/contact/mail.png"
-                 
-                  />{" "}
-                  ex@mail.com
+                <a href="mailto:huanbee97@gmail.com">
+                  <FontAwesomeIcon icon={faAt} /> huanbee97@gmail.com
                 </a>
-                <br />
-                <p><img
-                  src="images/contact/call.png"
-                  
-                />{" "}
-                +84 369140123
-				</p>
-               <p>
-                <img
-                  src="images/contact/location.png"
-                 
-                />{" "}
-                Ha Noi, Viet Nam
-				</p>
+                <p>
+                  <FontAwesomeIcon icon={faPhoneAlt} /> +84 369140123
+                </p>
+                <p>
+                  <FontAwesomeIcon icon={faMapMarkerAlt} /> Ha Noi, Viet Nam
+                </p>
               </div>
             </Col>
             <Col sm xs={12}>
@@ -44,7 +38,7 @@ class FooterLayout extends Component {
                   xs={3}
                   style={({ paddingLeft: 0 }, { paddingRight: 0 })}
                 >
-                  <a href="single.html">
+                  <a href="single">
                     <img src="images/ng1.jpg" alt=" " />
                   </a>
                 </Col>
@@ -53,8 +47,8 @@ class FooterLayout extends Component {
                   xs={3}
                   style={({ paddingLeft: 0 }, { paddingRight: 0 })}
                 >
-                  <a href="single.html">
-                    <img src="images/ng1.jpg" alt=" " />
+                  <a href="single">
+                    <img src="images/ng2.jpg" alt=" " />
                   </a>
                 </Col>
                 <Col
@@ -62,8 +56,8 @@ class FooterLayout extends Component {
                   xs={3}
                   style={({ paddingLeft: 0 }, { paddingRight: 0 })}
                 >
-                  <a href="single.html">
-                    <img src="images/ng1.jpg" alt=" " />
+                  <a href="single">
+                    <img src="images/ng3.jpg" alt=" " />
                   </a>
                 </Col>
                 <Col
@@ -71,8 +65,8 @@ class FooterLayout extends Component {
                   xs={3}
                   style={({ paddingLeft: 0 }, { paddingRight: 0 })}
                 >
-                  <a href="single.html">
-                    <img src="images/ng1.jpg" alt=" " />
+                  <a href="single">
+                    <img src="images/ng4.jpg" alt=" " />
                   </a>
                 </Col>
               </Row>
@@ -82,8 +76,8 @@ class FooterLayout extends Component {
                   xs={3}
                   style={({ paddingLeft: 0 }, { paddingRight: 0 })}
                 >
-                  <a href="single.html">
-                    <img src="images/ng1.jpg" alt=" " />
+                  <a href="single">
+                    <img src="images/ng5.jpg" alt=" " />
                   </a>
                 </Col>
                 <Col
@@ -91,8 +85,8 @@ class FooterLayout extends Component {
                   xs={3}
                   style={({ paddingLeft: 0 }, { paddingRight: 0 })}
                 >
-                  <a href="single.html">
-                    <img src="images/ng1.jpg" alt=" " />
+                  <a href="single">
+                    <img src="images/ng6.jpg" alt=" " />
                   </a>
                 </Col>
                 <Col
@@ -100,8 +94,8 @@ class FooterLayout extends Component {
                   xs={3}
                   style={({ paddingLeft: 0 }, { paddingRight: 0 })}
                 >
-                  <a href="single.html">
-                    <img src="images/ng1.jpg" alt=" " />
+                  <a href="single">
+                    <img src="images/ng7.jpg" alt=" " />
                   </a>
                 </Col>
                 <Col
@@ -109,14 +103,14 @@ class FooterLayout extends Component {
                   xs={3}
                   style={({ paddingLeft: 0 }, { paddingRight: 0 })}
                 >
-                  <a href="single.html">
-                    <img src="images/ng1.jpg" alt=" " />
+                  <a href="single">
+                    <img src="images/ng8.jpg" alt=" " />
                   </a>
                 </Col>
               </Row>
             </Col>
             <Col sm xs={12}>
-              <a href="index.html">
+              <a href="/">
                 <h4>
                   Games{" "}
                   <img className="sz-12Logo" src="images/f1.png" alt=" " /> Zone
