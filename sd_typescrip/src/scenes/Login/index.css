@@ -1,0 +1,21 @@
+
+.login-form-forgot {
+  float: right;
+}
+.ant-col-rtl .login-form-forgot {
+  float: left;
+}
+.login-form-button {
+  width: 100%;
+}
+.formLogin{
+  max-width: 400px ;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  justify-content: center;
+}
+.ant-card-body{
+  padding-bottom: 0px;
+}
