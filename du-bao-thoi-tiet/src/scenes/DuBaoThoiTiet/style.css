@@ -1,0 +1,93 @@
+.container {
+  min-width: 960px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 100vh;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formthoitiet {
+  width: 100%;
+  min-height: 500px;
+  background-color:#ffffffcc;
+}
+marquee h2 {
+  margin: 0;
+}
+.padding10 {
+  padding: 0 10px 10px 10px;
+}
+/* .padding10 h3{
+    color: white;
+    width: 60px;
+    background-color: rgba(0, 0, 0, 0.5) ;
+    transform-style: flat;
+  } */
+.flag {
+  width: 100%;
+  border-bottom: 2px solid #68c62d;
+  color: white;
+}
+.flag h3 {
+  display: inline-block;
+  margin: 0;
+  padding: 0 10px 0 10px;
+  background-color: #68c62d;
+  color: white;
+}
+.showTe {
+  display: flex;
+}
+.temperature {
+  font-size: 90px;
+  font-weight: 500;
+  line-height: 1.08;
+  color: #000;
+  /* white-space: nowrap; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  /* margin-right: 50px; */
+  max-width: 250px;
+  width: auto;
+}
+.temperature span {
+  color: #878787;
+  font-size: 40px;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+}
+.texttt {
+  color: #878787;
+  font-size: 20px;
+  line-height: 1.71;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  width: 100%;
+}
+.ne {
+  font-size: 14px;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  border-bottom: 1px solid rgb(16 64 199);
+}
+.tt4day {
+  display: flex;
+  justify-content: center;
+}
+.t5day {
+  width: 100px;
+  text-align: center;
+}
+.weekday{
+font-weight: bold;
+}

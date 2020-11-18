@@ -1,0 +1,57 @@
+@media (min-width: 922px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+.container {
+  min-width: 960px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.myInfo-avatar {
+    background-color: #263238;
+    height: 310px;
+
+}
+.ant-avatar{
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+.top35{
+    position: relative;
+    top: 34px;
+}
+
+.myInfo-Name h1{
+    margin-top: 50px;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    color: #ffffff;
+    
+}
+.myInfo-full{
+    background-color: #37474f;
+    min-height: 200px;
+    height: auto;
+    padding: 20px 0 0 10px;
+}
+.colorWhite{
+    color: white;
+}
+.myInfo-full h1{
+    margin-top: 30px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffffff;
+}
+.myInfo-full li{
+    color: #ffffff;
+}

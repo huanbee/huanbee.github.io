@@ -1,0 +1,50 @@
+.centerScreen {
+  /* position: relative; */
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  height:90vh;
+  justify-content: center;
+}
+
+.ant-card-head-title {
+  text-align: center;
+}
+.ant-card {
+  box-shadow: inset 0px 0px 50px 5px rgb(8 226 245 / 19%);
+}
+.ant-card-body {
+  padding-top: 0;
+}
+.site-layout-background {
+  background: #fff;
+}
+.anticon-heart {
+  color: rgb(201, 10, 248);
+  animation-name: stretch;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+.ant-avatar{
+  top: 0 !important;
+}
+@keyframes stretch {
+  0% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1.3);
+  }
+}
+.background-Chat-Left{
+  background-color: rgb(215, 224, 224);
+  padding: 5px 10px 5px 10px;
+  border-radius: 20px;
+  margin-bottom: 5px;
+  width: 90%;
+}
