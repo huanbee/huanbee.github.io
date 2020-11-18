@@ -48,11 +48,11 @@ export default function Dubaothoitiet() {
     let bgs = document.getElementById("bg1");
     let d = new Date();
     if (d.getHours() > 18) {
-      bgs.style.background = "url('images/night.jpg')";
+      bgs.style.background = "url('/images/night.jpg')";
       bgs.style.backgroundRepeat = "no-repeat";
       bgs.style.backgroundSize = "cover";
     } else {
-      bgs.style.background = "url('images/day.jpg')";
+      bgs.style.background = "url('/images/day.jpg')";
       bgs.style.backgroundRepeat = "no-repeat";
       bgs.style.backgroundSize = "cover";
     }
@@ -127,9 +127,9 @@ export default function Dubaothoitiet() {
   function findLocal(params) {
     let patt = /vn\/.*?(.*?)\//i;
     let mat = params.match(patt);
-    if (mat[1] == "hanoi") return "Hà Nội";
-    else if (mat[1] == "da-nang") return "Đà Nẵng";
-    else if (mat[1] == "ho-chi-minh-city") return "Hồ Chí Minh";
+    if (mat[1] === "hanoi") return "Hà Nội";
+    else if (mat[1] === "da-nang") return "Đà Nẵng";
+    else if (mat[1] === "ho-chi-minh-city") return "Hồ Chí Minh";
     else return mat[1];
   }
 

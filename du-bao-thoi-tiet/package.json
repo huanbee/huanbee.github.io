@@ -1,7 +1,7 @@
 {
   "name": "du-bao-thoi-tiet",
   "version": "0.1.0",
-  "homepage": "https://huanbee.github.io/demo-deploy-github-pages/",
+  "homepage": "https://huanbee.github.io/du-bao-thoi-tiet/",
   "private": true,
   "dependencies": {
     "@ant-design/charts": "^1.0.7",

@@ -12,6 +12,7 @@ const RouterIndex = () => {
         <Route exact path="/" component={Dubaothoitiet}></Route>
         <Route path="/myProfile" component={myProfile}></Route>
         <Route path="/duBaoThoiTiet" component={Dubaothoitiet}></Route>
+        <Route path="/du-bao-thoi-tiet" component={Dubaothoitiet}></Route>
         <Route path="/home" component={DefaultLayout}></Route>
         <Route component={NotPage404}></Route>
         {/* <Route path="/home" component={DefaultLayout}></Route> */}
